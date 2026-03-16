@@ -1,0 +1,56 @@
+name: hernandes-devocional
+version: 1.0.0
+description: "Squad focado no desenvolvimento do ecossistema devocional oficial de Hernandes Dias Lopes (MicroSaaS + Funil de Vendas)."
+author: "Orion @aios-master"
+license: MIT
+slashPrefix: hernandes-devocional
+
+aios:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  agents:
+    - @copy-master
+    - @designer-spiritual
+    - @fullstack-pwa
+    - @growth-monitor
+  tasks:
+    - analisar-concorrencia-glorify.md
+    - definir-mecanismo-unico-expositivo.md
+    - criar-roteiro-vsl-hernandes.md
+    - desenhar-ui-devocional-calm.md
+    - implementar-pwa-nextjs.md
+    - integrar-supabase-auth-db.md
+    - configurar-checkout-hotmart.md
+  workflows:
+    - launch-v1.yaml
+  checklists:
+    - launch-readiness.md
+  templates:
+    - devocional-item.md
+  tools: []
+  scripts: []
+
+config:
+  extends: extend
+  coding-standards: config/coding-standards.md
+  tech-stack: config/tech-stack.md
+  source-tree: config/source-tree.md
+
+dependencies:
+  node:
+    - next
+    - supabase
+    - tailwindcss
+    - framer-motion
+    - lucide-react
+  python: []
+  squads: []
+
+tags:
+  - hernandes-dias-lopes
+  - devocional
+  - app-cristao
+  - microsaas
+  - pwa

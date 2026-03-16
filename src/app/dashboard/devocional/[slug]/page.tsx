@@ -13,7 +13,7 @@ export default function DevocionalDetalhe() {
   const params = useParams();
   const router = useRouter();
   const slug = params.slug as string;
-  const { markAsCompleted, completedDevotionals } = useUserProgress();
+  const { completeDevotional, completedDevotionals } = useUserProgress();
 
   const devotional = devotionalsData.find(d => d.slug === slug) || devotionalsData[0];
   const isCompleted = completedDevotionals.includes(devotional.id);
@@ -57,7 +57,7 @@ export default function DevocionalDetalhe() {
             <Share2 size={20} />
           </button>
           <button 
-            onClick={() => markAsCompleted(devotional.id)}
+            onClick={() => completeDevotional(devotional.id)}
             className={`w-14 h-14 rounded-2xl border flex items-center justify-center transition-all ${
               isCompleted ? 'bg-spiritual-gold border-spiritual-gold text-spiritual-navy' : 'bg-white/5 border-white/10 text-white/60'
             }`}
