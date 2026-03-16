@@ -1,0 +1,122 @@
+[
+  {
+    "id": "jornada-esperanca",
+    "title": "Jornada da Esperança",
+    "subtitle": "7 Dias de Renovo Profundo",
+    "description": "Um mergulho profundo nas promessas de renovo e paz para o seu coração, guiado pelo Pr. Hernandes Dias Lopes.",
+    "badgeId": "guerreiro",
+    "totalDays": 7,
+    "imageColor": "from-spiritual-gold/40",
+    "days": [
+      {
+        "day": 1,
+        "title": "O Fundamento da Esperança",
+        "verse": "Romanos 15:13",
+        "duration": "5 min",
+        "devotionalId": "hope-day-1"
+      },
+      {
+        "day": 2,
+        "title": "Descanso na Tempestade",
+        "verse": "Salmos 46:1",
+        "duration": "6 min",
+        "devotionalId": "hope-day-2"
+      },
+      {
+        "day": 3,
+        "title": "A Força que Vem do Alto",
+        "verse": "Isaías 40:31",
+        "duration": "4 min",
+        "devotionalId": "hope-day-3"
+      },
+      {
+        "day": 4,
+        "title": "Renovo nas Madrugadas",
+        "verse": "Salmos 30:5",
+        "duration": "7 min",
+        "devotionalId": "hope-day-4"
+      },
+      {
+        "day": 5,
+        "title": "A Promessa da Vitória",
+        "verse": "1 Coríntios 15:57",
+        "duration": "5 min",
+        "devotionalId": "hope-day-5"
+      },
+      {
+        "day": 6,
+        "title": "Ancorados na Rocha",
+        "verse": "Hebreus 6:19",
+        "duration": "6 min",
+        "devotionalId": "hope-day-6"
+      },
+      {
+        "day": 7,
+        "title": "Um Novo Amanhecer",
+        "verse": "Lamentações 3:22-23",
+        "duration": "8 min",
+        "devotionalId": "hope-day-7"
+      }
+    ]
+  },
+  {
+    "id": "familia-graca",
+    "title": "Família Debaixo da Graça",
+    "subtitle": "7 Dias Restaurando o Altar Familiar",
+    "description": "Uma jornada intensiva para fortalecer os laços familiares e edificar seu lar sobre a rocha da Palavra de Deus.",
+    "badgeId": "guardiao-lar",
+    "totalDays": 7,
+    "imageColor": "from-blue-600/40",
+    "days": [
+      {
+        "day": 1,
+        "title": "O Projeto de Deus para o Lar",
+        "verse": "Gênesis 2:24",
+        "duration": "6 min",
+        "devotionalId": "um-profundo-contraste"
+      },
+      {
+        "day": 2,
+        "title": "Maridos em Cristo",
+        "verse": "Efésios 5:25",
+        "duration": "7 min",
+        "devotionalId": "amor-superlativo"
+      },
+      {
+        "day": 3,
+        "title": "A Sabedoria da Mulher",
+        "verse": "Provérbios 14:1",
+        "duration": "6 min",
+        "devotionalId": "deus-controle-crise"
+      },
+      {
+        "day": 4,
+        "title": "Filhos: Herança e Alvos",
+        "verse": "Salmo 127:3",
+        "duration": "5 min",
+        "devotionalId": "nao-tenha-medo-tenha-fe"
+      },
+      {
+        "day": 5,
+        "title": "Vencendo a Amargura no Lar",
+        "verse": "Hebreus 12:15",
+        "duration": "8 min",
+        "devotionalId": "drama-do-ciume"
+      },
+      {
+        "day": 6,
+        "title": "O Poder da Oração em Família",
+        "verse": "Mateus 18:20",
+        "duration": "6 min",
+        "devotionalId": "jesus-nossa-paz"
+      },
+      {
+        "day": 7,
+        "title": "Altares de Gratidão",
+        "verse": "Salmo 103:2",
+        "duration": "7 min",
+        "devotionalId": "alegria-do-senhor"
+      }
+    ]
+  }
+]

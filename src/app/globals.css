@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 15, 25;
+  --background-end-rgb: 5, 8, 15;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-spiritual-gold text-spiritual-navy font-bold py-3 px-8 rounded-full 
+           hover:bg-opacity-90 transition-all duration-300 active:scale-95 shadow-lg;
+  }
+
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-3xl;
+  }
+
+  .glass-panel {
+    @apply bg-white/[0.05] backdrop-blur-xl border-t border-white/10;
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  }
+
+  .premium-gradient {
+    background: linear-gradient(135deg, #1A2238 0%, #0D1221 100%);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+  }
+}
+
+/* Custom Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
