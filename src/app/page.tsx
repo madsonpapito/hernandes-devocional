@@ -11,98 +11,10 @@ export default function Home() {
         </button>
       </nav>
 
-      {/* Hero Section (TSL Style) */}
-      <section className="px-6 pt-16 pb-24 text-center max-w-4xl mx-auto border-b border-white/5">
-        <div className="inline-block bg-spiritual-gold/10 text-spiritual-gold px-4 py-1 rounded-full text-xs font-bold tracking-[0.2em] mb-8 uppercase">
-          Acesso Exclusivo à Profundidade Bíblica
-        </div>
-        <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-10">
-          Você sente que sua vida espiritual está <span className="text-spiritual-gold italic">estagnada na superfície?</span>
-        </h1>
-        
-        <div className="space-y-6 text-left text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed font-light">
-          <p>
-            Muitos cristãos hoje sofrem de uma "fome de profundidade". Lemos a Bíblia, mas muitas vezes não compreendemos a riqueza teológica e a aplicação prática contida em cada versículo.
-          </p>
-          <p>
-            O mundo nos empurra para o que é rápido, raso e automático. Até mesmo o nosso tempo devocional acabou se tornando uma tarefa para "dar check" na lista de afazeres.
-          </p>
-          <p className="font-serif italic text-spiritual-gold text-2xl py-4 border-y border-white/5 text-center">
-            "Não é apenas sobre ler a Bíblia; é sobre deixar que a Palavra de Deus habite ricamente em você."
-          </p>
-          <p>
-            É por isso que decidi abrir as portas do meu método de estudo pessoal. O **Método Expositivo**, que usei por mais de 40 anos no ministério, agora está organizado para que você possa mergulhar nas profundezas da Palavra todos os dias.
-          </p>
-          <p className="font-bold text-white">
-            Apresento a você o novo ecossistema devocional oficial — um aplicativo projetado para quem não aceita mais uma fé superficial.
-          </p>
-        </div>
-
-        <div className="mt-16">
-          <button className="btn-gold text-lg uppercase tracking-wider w-full md:w-auto px-12 py-6">
-            Quero Iniciar Minha Jornada Profunda
-          </button>
-          <p className="mt-4 text-white/40 text-sm">Acesso imediato ao App HDL Devocional</p>
-        </div>
-      </section>
-
-      {/* Mechanism Highlights */}
-      <section className="bg-white/5 py-24 px-6 border-y border-white/10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-spiritual-gold/10 rounded-2xl flex items-center justify-center mb-6 text-spiritual-gold">
-              <BookOpen size={32} />
-            </div>
-            <h3 className="font-serif text-2xl mb-4">Método Expositivo</h3>
-            <p className="text-white/60">Não é apenas leitura. É entendimento histórico, teológico e prático de cada versículo.</p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-spiritual-gold/10 rounded-2xl flex items-center justify-center mb-6 text-spiritual-gold">
-              <Play size={32} />
-            </div>
-            <h3 className="font-serif text-2xl mb-4">Áudio-Primeiro</h3>
-            <p className="text-white/60">Ouça os comentários com a voz e autoridade do Reverendo Hernandes Dias Lopes.</p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-spiritual-gold/10 rounded-2xl flex items-center justify-center mb-6 text-spiritual-gold">
-              <ShieldCheck size={32} />
-            </div>
-            <h3 className="font-serif text-2xl mb-4">Base Sólida</h3>
-            <p className="text-white/60">Fuja do superficial. Construa uma fé fundamentada na doutrina bíblica reformada.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Social Proof & Testimonials */}
-      <section className="py-24 px-6 max-w-7xl mx-auto border-b border-white/10">
-        <div className="flex justify-center gap-1 mb-6 text-spiritual-gold">
-          {[1,2,3,4,5].map(i => <Star key={i} fill="#D4AF37" size={24} />)}
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center italic mb-16">
-          "O conteúdo do Hernandes tem sido o alimento mais sólido na minha jornada cristã."
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[
-            { name: "Maria Oliveira", role: "Líder de Pequeno Grupo", text: "As jornadas diárias me ajudam a manter o foco no que realmente importa.", avatar: "/avatar-f1.jpg" },
-            { name: "Ricardo Santos", role: "Seminarista", text: "A profundidade teológica do Reverendo Hernandes é incomparável. Essencial para meu ministério.", avatar: "/avatar-m1.jpg" },
-            { name: "Ana Beatriz", role: "Estudante da Bíblia", text: "O app é prático e o conteúdo é transformador. Sinto que estou crescendo de verdade.", avatar: "/avatar-f2.jpg" },
-            { name: "Lucas Ferreira", role: "Pai de Família", text: "Ouvir os áudios no caminho para o trabalho mudou minha rotina espiritual.", avatar: "/avatar-m2.jpg" }
-          ].map((item, i) => (
-            <div key={i} className="glass-card p-8 border border-white/5 hover:border-spiritual-gold/30 transition-all flex flex-col items-center text-center">
-              <img src={item.avatar} alt={item.name} className="w-20 h-20 rounded-full object-cover border-2 border-spiritual-gold/30 mb-6" />
-              <p className="text-white/70 italic text-sm mb-6">"{item.text}"</p>
-              <h4 className="font-bold text-spiritual-gold text-sm uppercase tracking-widest">{item.name}</h4>
-              <span className="text-[10px] text-white/30 uppercase tracking-widest mt-1">{item.role}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Experience the App (Mockup Section) */}
-      <section className="py-24 px-6 bg-black/20 overflow-hidden">
+      {/* Experience the App (Mockup Section) - Now 1st Section */}
+      <section className="py-16 pb-24 px-6 bg-black/20 overflow-hidden border-b border-white/5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-          <div className="w-full md:w-1/2 order-2 md:order-1">
+          <div className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
              <div className="inline-block bg-spiritual-gold/10 text-spiritual-gold px-4 py-1 rounded-full text-[10px] font-black tracking-widest mb-6 uppercase">
               O Teu Devocional, Onde Você Estiver
             </div>
@@ -112,7 +24,7 @@ export default function Home() {
             <p className="text-lg text-white/60 mb-10 leading-relaxed">
               O ecossistema HDL Devocional foi projetado para ser intuitivo, rápido e profundo. Com uma interface minimalista que remove as distrações e foca no que importa: a sua comunhão com o Senhor.
             </p>
-            <ul className="space-y-4 mb-10">
+            <ul className="space-y-4 mb-10 text-left">
               {["Acesso offline para meditação em qualquer lugar", "Progresso sincronizado entre dispositivos", "Interface dark mode para leitura confortável"].map((feature, i) => (
                 <li key={i} className="flex items-center gap-3 text-white/80">
                   <div className="w-2 h-2 rounded-full bg-spiritual-gold"></div>
@@ -120,6 +32,11 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+            <div className="flex flex-col items-center md:items-start">
+              <button className="btn-gold text-lg uppercase tracking-wider w-full md:w-auto px-12 py-6">
+                Quero Iniciar Minha Jornada Profunda
+              </button>
+            </div>
           </div>
           <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
              <div className="relative w-full max-w-[400px]">
@@ -133,6 +50,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pain Section (TSL Style) - Now 2nd Section */}
+      <section className="px-6 py-24 text-center max-w-4xl mx-auto border-b border-white/5">
+        <div className="inline-block bg-spiritual-gold/10 text-spiritual-gold px-4 py-1 rounded-full text-xs font-bold tracking-[0.2em] mb-8 uppercase">
+          Acesso Exclusivo à Profundidade Bíblica
+        </div>
+        <h2 className="font-serif text-4xl md:text-5xl font-bold leading-tight mb-8">
+          Você sente que sua vida espiritual <span className="text-spiritual-gold italic">tem esfriado?</span>
+        </h2>
+        
+        <div className="space-y-8 text-center max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-xl md:text-2xl font-bold text-white">
+            Você anda sem tempo de fazer suas leituras diárias?
+          </p>
+          
+          <div className="p-6 bg-spiritual-gold/5 border border-spiritual-gold/20 rounded-2xl">
+            <p className="text-lg text-white/80">
+              Com o devocional HDL você vai ter reflexões diárias e meditação na palavra, gastando apenas poucos minutos do seu dia, enquanto você faz suas tarefas.
+            </p>
+          </div>
+          
+          <p className="text-white/60">
+            Chega de fé superficial. O Método Expositivo do Reverendo Hernandes Dias Lopes agora está organizado para que você possa mergulhar nas profundezas da Palavra todos os dias, sem comprometer sua rotina.
+          </p>
+        </div>
+
+        <div className="mt-16">
+          <button className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full transition-all uppercase tracking-widest text-xs font-bold border border-white/10">
+            Conhecer o Método Completo
+          </button>
+        </div>
+      </section>
+
 
       {/* Modules / Features */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
