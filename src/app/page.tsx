@@ -14,7 +14,7 @@ export default function Home() {
       {/* Experience the App (Mockup Section) - Now 1st Section */}
       <section className="py-16 pb-24 px-6 bg-black/20 overflow-hidden border-b border-white/5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-          <div className="w-full md:w-1/2 order-2 md:order-1 text-center md:text-left">
+          <div className="w-full md:w-1/2 text-center md:text-left">
              <div className="inline-block bg-spiritual-gold/10 text-spiritual-gold px-4 py-1 rounded-full text-[10px] font-black tracking-widest mb-6 uppercase">
               O Teu Devocional, Onde Você Estiver
             </div>
@@ -38,7 +38,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
+          <div className="w-full md:w-1/2 flex justify-center">
              <div className="relative w-full max-w-[400px]">
                 <div className="absolute inset-0 bg-spiritual-gold/20 blur-[120px] rounded-full -z-10"></div>
                 <img 
