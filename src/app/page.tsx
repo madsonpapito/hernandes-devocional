@@ -32,10 +32,10 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col items-center md:items-start">
-              <button className="btn-gold text-lg uppercase tracking-wider w-full md:w-auto px-12 py-6">
-                Quero Iniciar Minha Jornada Profunda
-              </button>
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              <a href="#pricing" className="btn-gold text-lg uppercase tracking-wider w-full md:w-auto px-12 py-6 text-center">
+                Quero sentir a palavra queimar no meu coração
+              </a>
             </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
@@ -77,9 +77,9 @@ export default function Home() {
         </div>
 
         <div className="mt-16">
-          <button className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full transition-all uppercase tracking-widest text-xs font-bold border border-white/10">
-            Conhecer o Método Completo
-          </button>
+          <a href="#pricing" className="inline-block bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full transition-all uppercase tracking-widest text-xs font-bold border border-white/10">
+            Quero Iniciar Minha Jornada Profunda
+          </a>
         </div>
       </section>
 
@@ -140,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* Pricing / CTA */}
-      <section className="py-24 px-6 text-center max-w-4xl mx-auto">
+      <section id="pricing" className="py-24 px-6 text-center max-w-4xl mx-auto">
         <h2 className="font-serif text-4xl md:text-5xl mb-6 italic">Comece Hoje sua Jornada</h2>
         <p className="text-white/60 mb-12">Escolha o plano que melhor se adapta ao seu momento.</p>
         
@@ -149,18 +149,18 @@ export default function Home() {
             <h3 className="uppercase tracking-widest text-sm text-white/40 mb-4">Mensal</h3>
             <div className="text-4xl font-serif font-bold mb-4">R$ 19,90</div>
             <p className="text-xs text-white/40 mb-8 italic">Ideal para experimentar</p>
-            <button className="w-full py-4 border border-white/20 rounded-lg hover:bg-white/10 transition-colors uppercase tracking-widest text-sm font-bold">
+            <a href="https://pay.kiwify.com.br/JqHaE4N" className="w-full py-4 border border-white/20 rounded-lg hover:bg-white/10 transition-colors uppercase tracking-widest text-sm font-bold block text-center">
               Assinar Agora
-            </button>
+            </a>
           </div>
           <div className="p-8 bg-spiritual-navy rounded-2xl border-2 border-spiritual-gold flex flex-col items-center relative overflow-hidden">
             <div className="absolute top-4 right-[-35px] bg-spiritual-gold text-spiritual-navy text-[10px] font-bold py-1 px-10 rotate-45">POPULAR</div>
             <h3 className="uppercase tracking-widest text-sm text-spiritual-gold mb-4">Anual</h3>
             <div className="text-4xl font-serif font-bold mb-4">R$ 147,00</div>
             <p className="text-xs text-white/40 mb-8 italic">Menos de R$ 0,40 por dia</p>
-            <button className="w-full btn-gold py-4 rounded-lg uppercase tracking-widest text-sm font-bold">
+            <a href="https://pay.kiwify.com.br/JqHaE4N" className="w-full btn-gold py-4 rounded-lg uppercase tracking-widest text-sm font-bold block text-center">
               Garantir Desconto
-            </button>
+            </a>
           </div>
         </div>
         
