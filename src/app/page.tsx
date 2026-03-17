@@ -219,7 +219,7 @@ export default function Home() {
             <ShieldCheck size={16} />
             7 Dias de Garantia Incondicional
           </div>
-          <div className="text-white/20 text-[10px] uppercase tracking-[0.2em]">Pagamento Seguro via Hotmart</div>
+          <div className="text-white/20 text-[10px] uppercase tracking-[0.2em]">Pagamento Seguro via Kiwify</div>
         </div>
       </section>
 
@@ -238,7 +238,7 @@ export default function Home() {
             },
             {
               q: "Como recebo o acesso após o pagamento?",
-              a: "O acesso é imediato. Assim que sua assinatura for confirmada pela Hotmart, você receberá um e-mail com seus dados de login e o link exclusivo para acessar o ecossistema devocional."
+              a: "O acesso é imediato. Assim que sua assinatura for confirmada pela Kiwify, você receberá um e-mail com seus dados de login e o link exclusivo para acessar o ecossistema devocional."
             },
             {
               q: "O conteúdo é atualizado diariamente?",
