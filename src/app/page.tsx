@@ -73,15 +73,65 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof Placeholder */}
-      <section className="py-24 px-6 text-center max-w-4xl mx-auto border-b border-white/10">
+      {/* Social Proof & Testimonials */}
+      <section className="py-24 px-6 max-w-7xl mx-auto border-b border-white/10">
         <div className="flex justify-center gap-1 mb-6 text-spiritual-gold">
           {[1,2,3,4,5].map(i => <Star key={i} fill="#D4AF37" size={24} />)}
         </div>
-        <h2 className="font-serif text-3xl italic mb-8">
-          "O conteúdo do Hernandes tem sido o alimento mais sólido na minha jornada cristã. Ter isso num app mudou meu hábito diário."
+        <h2 className="font-serif text-3xl md:text-5xl text-center italic mb-16">
+          "O conteúdo do Hernandes tem sido o alimento mais sólido na minha jornada cristã."
         </h2>
-        <p className="font-bold text-spiritual-gold tracking-widest uppercase text-sm">João Silva, Assinante Premium</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { name: "Maria Oliveira", role: "Líder de Pequeno Grupo", text: "As jornadas diárias me ajudam a manter o foco no que realmente importa.", avatar: "/avatar-f1.jpg" },
+            { name: "Ricardo Santos", role: "Seminarista", text: "A profundidade teológica do Reverendo Hernandes é incomparável. Essencial para meu ministério.", avatar: "/avatar-m1.jpg" },
+            { name: "Ana Beatriz", role: "Estudante da Bíblia", text: "O app é prático e o conteúdo é transformador. Sinto que estou crescendo de verdade.", avatar: "/avatar-f2.jpg" },
+            { name: "Lucas Ferreira", role: "Pai de Família", text: "Ouvir os áudios no caminho para o trabalho mudou minha rotina espiritual.", avatar: "/avatar-m2.jpg" }
+          ].map((item, i) => (
+            <div key={i} className="glass-card p-8 border border-white/5 hover:border-spiritual-gold/30 transition-all flex flex-col items-center text-center">
+              <img src={item.avatar} alt={item.name} className="w-20 h-20 rounded-full object-cover border-2 border-spiritual-gold/30 mb-6" />
+              <p className="text-white/70 italic text-sm mb-6">"{item.text}"</p>
+              <h4 className="font-bold text-spiritual-gold text-sm uppercase tracking-widest">{item.name}</h4>
+              <span className="text-[10px] text-white/30 uppercase tracking-widest mt-1">{item.role}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Experience the App (Mockup Section) */}
+      <section className="py-24 px-6 bg-black/20 overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+          <div className="w-full md:w-1/2 order-2 md:order-1">
+             <div className="inline-block bg-spiritual-gold/10 text-spiritual-gold px-4 py-1 rounded-full text-[10px] font-black tracking-widest mb-6 uppercase">
+              O Teu Devocional, Onde Você Estiver
+            </div>
+            <h2 className="font-serif text-4xl md:text-6xl font-bold mb-8 leading-tight">
+              A Palavra de Deus <span className="text-spiritual-gold">na palma da sua mão</span>
+            </h2>
+            <p className="text-lg text-white/60 mb-10 leading-relaxed">
+              O ecossistema HDL Devocional foi projetado para ser intuitivo, rápido e profundo. Com uma interface minimalista que remove as distrações e foca no que importa: a sua comunhão com o Senhor.
+            </p>
+            <ul className="space-y-4 mb-10">
+              {["Acesso offline para meditação em qualquer lugar", "Progresso sincronizado entre dispositivos", "Interface dark mode para leitura confortável"].map((feature, i) => (
+                <li key={i} className="flex items-center gap-3 text-white/80">
+                  <div className="w-2 h-2 rounded-full bg-spiritual-gold"></div>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
+             <div className="relative w-full max-w-[400px]">
+                <div className="absolute inset-0 bg-spiritual-gold/20 blur-[120px] rounded-full -z-10"></div>
+                <img 
+                  src="/members_area_mobile_mockup.png" 
+                  alt="HDL Devocional Mobile Mockup" 
+                  className="w-full h-auto drop-shadow-[0_35px_60px_rgba(0,0,0,0.8)]"
+                />
+             </div>
+          </div>
+        </div>
       </section>
 
       {/* Modules / Features */}
@@ -110,9 +160,12 @@ export default function Home() {
       {/* About the Author */}
       <section className="bg-spiritual-gold/5 py-24 px-6 border-y border-white/10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-          <div className="w-full md:w-1/2 aspect-[3/4] bg-white/10 rounded-2xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700">
-             {/* Placeholder para foto do Hernandes */}
-             <div className="absolute inset-0 flex items-center justify-center text-white/20 font-serif italic">Foto: Hernandes Dias Lopes</div>
+          <div className="w-full md:w-1/2 aspect-[3/4] bg-white/10 rounded-2xl overflow-hidden relative group">
+             <img 
+               src="/hernandes-speaking.jpg" 
+               alt="Hernandes Dias Lopes" 
+               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+             />
           </div>
           <div className="w-full md:w-1/2">
             <h2 className="font-serif text-4xl md:text-5xl mb-8 leading-tight">Conheça o Seu <span className="text-spiritual-gold">Guia Teológico</span></h2>
